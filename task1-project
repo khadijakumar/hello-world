@@ -1,1 +1,17 @@
-git is Ausum
+import java.util.Scanner;
+class HelloWorld
+{
+   public static void main(String args[])
+   { 
+   
+   Scanner massage = new Scanner(System.in);
+   System.out.println("tell us about yourself");
+   String userMassage = massage.nextline();
+	System.out.println(userMassage);
+   }	 
+}   
+
+
+/ *
+A basic java code for the beginners..... 
+*/
