@@ -1,0 +1,106 @@
+package collections.java;
+
+import java.util.*;
+import java.util.ArrayList;
+
+public class Course {
+	
+	private String courseName;
+	private int numberOfStudents = 0;
+	private String courseLecturer;
+	
+	// create data fields
+	public Course( String Course_name, String Course_lecturer,int num_students) {
+		courseName = Course_name;
+		numberOfStudents = num_students;
+		courseLecturer = Course_lecturer;
+	}
+	
+	// specify the data fields
+	public String getName() {
+		return courseName;
+	}
+	
+	public int getNumStudents() {
+		return numberOfStudents;
+	}
+	public String getLecturer() {
+		return courseLecturer;
+	}
+	
+	// create a toString method returns and formats the data fields
+	public String toString() {
+		return String.format("(%s,%s,%d)", courseName, courseLecturer, numberOfStudents);
+	}
+
+	// comparator that compares the number of students in two courses
+static abstract class  NumberOfStudentsComparator implements Comparator<Course>{
+	    
+		public int Compare(Course C1, Course C2) {
+			return C1.getNumStudents() - C2.getNumStudents();
+			}
+		}
+
+     // comparator that compares the names of the two courses
+	static abstract class AlphabeticalComparator implements Comparator<Course>{
+		
+		public int Compare(Course C1, Course C2) {
+			return C1.getName().compareToIgnoreCase(C2.getName());
+		}
+		
+	}
+	public static void main(String[] args) {
+		
+		// create array list to store course information
+		List<Course> C1 = new ArrayList<Course>();
+		C1.add(new Course("Botany", "Prof.S.Laden", 38));
+		C1.add(new Course("Forensic Scisence", "Prof.R.Colens",50));
+	    C1.add(new Course("Ontology", "Dr.Z.Kumar", 70));
+	    C1.add(new Course("Ancient Artifacts and Relics", "Prof.M.Ruby",16));
+	    C1.add(new Course("Machanics", "Dr.F.Zubar", 44));
+	    
+	   System.out.println("Your Courses:\n" + C1);
+	   
+	   // sort the list accourdi1ng to the number of students
+	   Collections.sort( new C1, NumberOfStudentsComparator());
+	   System.out.println("After sorting:\n" + C1);
+	   
+	   // swap the first and second elements in the list with one another
+	   Collections.swap(C1, 0, 1);
+	   System.out.println("After swap:\n": C1);
+	   
+	   // new array list to store course information
+	   List<Course> C2 = new ArrayList<Course>();
+	   C2.add(new Course("English Literaturer", "Prof.N.Froggy", 100));
+	   C2.add(new Course("Fashion Design and Art", "Prof.B.Yung", 48));
+	   C2.add(new Course("Zoology", "Prog.R.khair", 61));
+	   C2.add(new Course("Python", "Dr.T.Matthews", 73));
+	   C2.add(new Course("Economics", "Prof.J.Milton", 110));
+	   
+	   System.out.println("Your Courses:\n" + C2);
+	   
+	   // copy elements from course1 into course2
+	   Collections.copy(C2, C1);
+	   System.out.println("All the courses:\n" + C2);
+	   
+	   // add two elements to course2
+	   C2.add(new Course("java 101", "Dr.P.Green", 55));
+	   C2.add(new Course("Advanced Programming", "Prof.M.Milton", 93));
+	   
+	   System.out.println(C2);
+	   
+	   // sort course2 alphabetically
+	   Collections.sort(C2, new AlphabeticalComparator());
+	   System.out.println("Courses in alphabetic order:\n", + C2);
+	   
+	   int Index = Collections.binarySearch(C2, "Java 101");
+	   System.out.println("Java 101 in C2 at: " + Index);
+	   
+	   // test for any common elements  between the courses using disjoint
+	   System.out.println("Similarities between c1 and c2: " +  Collections.disjoint(C1, C2));
+	   
+	   // print course with the minimum and with the maximum number of students
+	   System.out.println("The course with minimum number of Students: " + Collections.min(C2,new NumberOfStudentsComparator()));
+	   System.out.println("The course with maximum number of Students: " + Collections.max(C2,new NumberOfStudentsComparator()));
+	}
+	
