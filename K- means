@@ -1,0 +1,36 @@
+import csv
+import random
+from math import sqrt
+
+# read data from the csv files.
+def readCSV(file):
+	csvFile = open(dataoth.csv, 'r')
+	csvRead = csv.reader(csvFile, delimiter=',')
+	next(csvRead)
+	dataStore = [[row[0], [float(row[1]), float(row[2])]] for row in csvRead]
+	csvFile.close()
+	return dataStore
+
+# compute the Euclidean distance between two data points.
+def calcDist(point1, point2):
+	return sqrt((point1[0]-point2[0])**2 + (point1[1]-point2[1])**2)
+
+# reads data from the csv files.
+def calcMean(points):
+	unzipped = list(zip(*points))
+	x = sum(unzipped[0])
+	y = sum(unzipped[1])
+	return [x/len(points), y/len(points)]
+
+#  sum of squares
+def calcObj(centroid, points):
+	distances = [calcDist(centroid, p) for p in points]
+	return round(sum(distances), 2)
+
+# Get the names of the countries belonging to a cluster
+def getCountries(clusterPoints, data):
+	countries = []
+	for i, value in enumerate(data):
+		if value[1] in clusterPoints:
+			countries.append(data[i][0])
+	return countries
