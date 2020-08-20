@@ -1,0 +1,242 @@
+/*create the properties for the logo*/
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 60px solid rgb(231, 203, 46);
+	border-bottom: 0px solid transparent;
+  left: 40px;
+  position: relative;
+  
+} 
+/*body,header,and head properties*/
+body{
+  background-color: white;
+  width: 100%;
+  margin: Auto;
+}
+head{
+  background-color:rgb(41, 41, 44);
+  
+}
+
+header{
+  background-color:rgb(41, 41, 44);
+  
+  height: 32mm;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+
+}
+/*properties for the top slogans*/
+#top-logo{
+  font-family: Arial;
+  font-size: 8mm;
+  font-weight: 900;
+ 
+  color: white;
+  display: 70%;
+  left: 40px;
+  position: relative;
+} 
+#side-text{
+  font-family: Arial;
+  font-style: italic;
+  font-size: 2.4mm;
+  float:left; 
+  width: 20%;
+  margin: auto;
+  color: azure;
+  left: 40px;
+  position: relative;
+}
+
+img{
+  width: 1350px;
+  height: 800px;
+  alt: snow;
+  
+}
+
+/* create a container so you can position the text over the image and adjust the text properties */
+.container {
+  position: relative;
+  text-align: center;
+  
+}
+.bottom-left0 {
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+  color:yellow;
+  font-size: 4mm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bottom-left {
+  position: absolute;
+  bottom: -18px;
+  left: 70px;
+  color: white;
+  font-size: 12.5mm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* create the first headline and the information based on it,adjust the font and color properties */
+h1{
+  height:600px ;
+  width: 100%;
+  position: absolute;
+}
+.second-section{
+  position: absolute;
+  bottom: 400px;
+  left: 70px;
+  color:yellow;
+  font-size: 15mm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.p2{ 
+  position: absolute;
+  bottom: 160px;
+  left: 70px;
+  color:white;
+  font-size: 6mm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* create a hover for the search button and link it, adjust all necessary properties based on your design */
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+  right: 40px;
+}
+.topnav a.active {
+  background-color:rgb(41, 41, 44);
+  color: white;
+  right: 40px;
+  
+}
+.topnav a {
+  background-color: rgb(18, 18, 20);
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 15px 4px;
+  text-decoration: none;
+  font-size: 17px;
+  top: 0;
+  margin:Auto;
+}
+/* create a horizontal line and adjust its properties acoording to your design */
+.line {
+  border-right: 6px solid yellow;
+  height: 100px;
+  position: absolute;
+  right: 5%;
+  margin-left: auto;
+  bottom: -100px;
+}
+.p1{
+ 
+  font-size: 5mm;
+  color: white;
+  position: absolute;
+  right: 6%;
+  margin-left: auto;
+  bottom: -100px;
+}
+.p3{
+ position: absolute;
+  bottom: -920px;
+  right: 70px;
+  color:white;
+  font-size: 5mm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* create a division and paste an image acoording to your design */
+.div1{
+  background-color: rgb(41, 41, 44); 
+  width: 100%;
+}
+.img2{
+  width: 100%;
+  height: 400px;
+  background-color:  rgb(41, 41, 44);
+}
+/* create a backround for second headline and adjust the neccessary properties for the paragraphs or headings */
+.h2back{
+  background-color: white;
+  width:100%;
+  height: 300px;
+}
+.text2{
+  position: absolute;
+  bottom:-47cm;
+  left: 70px;
+  color: rgb(34, 31, 31);
+  font-size: 12.5mm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.insidetext{
+  position: absolute;
+  bottom:-49.8cm;
+  left: 70px;
+  color: rgb(34, 31, 31);
+  font-size: 6.5mm;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.rightside{
+  position: relative;
+  bottom: 3cm;
+  left: 700px;
+  color:black;
+  font-size: 5mm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.imgline{
+  right: 700cm;
+  bottom: 3cm;
+  width: 600px;
+  height:500px
+}
+.oppimg{
+  position: absolute;
+  left: 100px ;
+  bottom: -75cm;
+  color: rgb(34, 31, 31);
+  font-weight: 100;
+  font-size: 10.5mm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nextimgtxt{
+  position: absolute;
+  left: 62px ;
+  bottom: -80cm;
+  color: rgb(34, 31, 31);
+  font-size: 5.5mm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* create a h5 headline for contact information. did this due to lack of time. */
+.h5Q{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(41, 41, 44);
+}
+.con{
+  font-size: 9mm;
+  color:  rgb(226, 223, 17) ;
+  text-align: centre;
+  font-weight: 100;
+}
+.change{
+  font-size: 5mm;
+  color: white;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img3{
+
+}

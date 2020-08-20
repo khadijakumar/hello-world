@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>semilla restuarant</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- place a dropdown menu here at the top -->
+     
+    <div class="dropmenu">
+      <button  onclick="drop()" id="menue" class="menue">Menue</button>
+      <div id="myMenue" class="content">
+        <a href="#Breakfast">Breakfast</a>
+        <a href="#Lunch">Lunch with us</a>
+        <a href="#Dinner">Semilla style Dinner</a>
+      </div>
+    </div>   
+    
+    <!-- create a heading for the page using h1 -->
+    <h1>Welcome to semilla Italian Restuarant</h1>
+    <br>
+    <br>
+    <img src="https://www.tripsavvy.com/thmb/IaURHm7YSo7XT0Lz7sej0OqFYOc=/1500x1000/filters:fill(auto,1)/26-5adafa56c6733500373c3cf5.jpg"/>
+    <br>
+  <!-- a discription of the restuarants history -->
+    <h2  id="about us">About us</h2>
+    <br>
+    <pre id="pre">
+    Semilla is an italian restuarant 
+    that has been passed on from 
+    generation to generation.
+
+    it all started in one ladies kitchen 
+    and now it is a worldwide franchise.
+      
+      belisima.
+    
+    </pre>
+    <br><br>
+    <h2 id="the food"> The food</h2>
+    <br>
+    <pre id="pre">
+    Over time, the menu at Semilla has been
+    modernised although we still keep 
+    our foundations
+    authentic. 
+      
+    With a traditional twist and ofcourse including
+    the rarest and finest ingredients 
+    to give you that unique taste and feel good moment.</pre>
+    </h2>
+    <br><br>
+    <h2 class="fade"> Our Story</h2>
+    
+    <pre id="pre" class="fade">
+     Belisima Semilla was a beautiful
+     young woman and she dispised cooking.
+
+     It was only after she met her soul mate 
+     who loved food was she forced to cook for him and
+     that was the beggining of Semilla restuarants. 
+     Her food became the talk of the town and 
+     after eloping and opening a small eatery(which they also lived in) 
+     crowds would gather in pursuit of the amazing
+     smells and equisite dishes made by Belisima, 
+     so to celebrate her cooking and 
+     her great love story,
+     the semalli family has kept the restuarants
+     running with the aim of spreading 
+     to the whole world and expanding Belisima's legacy.</pre>
+
+     <p id=""
+    <!-- call the scrips to add javascript -->
+    <script>
+      function drop(){
+        let click = document.getElementById("myMenue");
+       
+        if (click.style.display === "none") {
+          click.style.display = "block";
+        }
+        else{
+          click.style.display  = "none";
+        }
+      }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"
+    ></script>
+  </body>
+</html>

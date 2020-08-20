@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Budgeting</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- create input forms for each income -->
+    <h4>Please enter Your main source of income:</h4>
+     <form>
+      <!-- create a label and an input slot for the uder to enter information about the lable -->
+      <div id="forminput">
+        <label for ="input" ><Name>Name:</Name></label>
+        <input type="text" id="#income" name="books" value="  ">
+      </div>
+      <br><br>
+      <div id="forminput">
+        <label for ="input" >Amount:</label>
+        <input type="text" id="#income1" name="books" value="  ">
+      </div>
+      <br>
+      <h4>Please add your expenses</h4>
+      <div id="forminput">
+        <label for ="input" ><Name>Name:</Name></label>
+        <input type="text" id="#expenses" name="books" value="  ">
+      </div>
+      <br><br>
+      <div id="forminput">
+        <label for ="input" >Amount:</label>
+        <input type="text" id="#expenses1" name="books" value="  ">
+      </div>
+      <br>
+      <!-- add a botton -->
+      <button  onclick="add()" type="button">Enter</button>
+      
+    
+
+    <!-- display the list of income options -->
+    <h4>Here is a list of your sources of income:</h4>
+      <p id="#FinancialS"> </p>
+      <br>
+     
+      <!-- display the users added expense -->
+    <h4> Here is a List of your monthly expenses:</h4>
+      <p id="#FinancialEX" > </p>
+      <br>
+
+    <h2>Your total monthl income:</h2>
+      <p id="#Total"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

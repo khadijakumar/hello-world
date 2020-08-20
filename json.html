@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Booklist" content="width=device-width">
+    <title>Booklist</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- create the body of the web page -->
+  <body>
+    <p id="information"> Please add information about your favourite book:</p>
+
+    <!-- create forms to add information -->
+    <form>
+      <!-- create a label and an input slot for the uder to enter information about the lable -->
+      <label for ="input" >Author:</label>
+      <input type="text" id="#enter" name="books" value=" "><br><br>
+      <label for ="input" >Book title:</label>
+      <input type="text" id="#enter1" name="books" value=" "><br><br>
+      <!-- put an id for each input so you can use it to retieve the elements in javascript -->
+      <label for ="input" >Genre:</label>
+      <input type="text" id="#enter2" name="books" value=" "><br><br>
+      <label for ="input" >Review:</label>
+      <input type="text" id="#enter3" name="books" value=" "><br><br>
+      <!-- create a click button so that it performs the function when it is ckicked("onclick") -->
+      <input name="enter" onclick="addlist()" type="button" value="enter">
+    </form>
+    <!-- create a button to edit the list us pre to put it in the middle of the list -->
+   
+    <!-- display the users information on the webpage -->
+    <h2 id="#information"> Here is your favourite book:</h2>
+    <!-- make the content editable using the built in element contenteditable -->
+    <p id ="#Author" contenteditable ="true"></p>
+    <p id ="#Book" contenteditable ="true"></p>
+    <p id ="#Genre" contenteditable ="true"></p>
+    <p id ="#Review" contenteditable ="true"></p>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
