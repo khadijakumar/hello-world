@@ -1,3 +1,3 @@
-# hello-world
-quest-lover
-im am new to coding
+#  this is a collection of smaller tasks
+you are welcome to look at the code for your own journey.
+Happy Coding :-)
